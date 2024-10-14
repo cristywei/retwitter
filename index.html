@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Re-twitter</title>
+</head>
+<body>
+    <input type="text" id="urlInput" placeholder="URL">
+    <button onclick="reTwitter()">ReTwitter</button>
+    <pre id="output"></pre>
+
+    <script>
+        function reTwitter() {
+            let url = document.getElementById('urlInput').value;
+            let twitterUrl = url.replace(/x/g, 'twitter');
+            document.getElementById('output').innerText = twitterUrl;
+        }
+    </script>
+</body>
